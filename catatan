@@ -1,0 +1,70 @@
+SOAL 1
+a. Buatlah pseudocode, flowchart untuk menghitung volume kubus. Nilai sisi merupakan input dari keyboard.
+b. Implementasikan ke dalam kode program
+
+sisi = int(input("Sisi :"))
+a = sisi*sisi*sisi
+
+print("Volume kubus =", a)
+
+p s e u d o c o d e
+start
+input(sisi)
+volume_kubus=sisi*sisi*sisi
+output(volume_kubus)
+end
+
+SOAL 2
+Buatlah pseudocode dan flowchart untuk menghitung volume bangun ruang dengan pilihan sebagai berikut.
+1. Kubus (V = s * s * s)
+2. Balok (V = p * l * t)
+3. Bola (V = 4/3 * phi * r * r * r)
+Dimana pilihan merupakan input dari keyboard.
+Artinya? 
+Jika kita masukkan pilihan: 1, maka program:
+    - menerima input sisi (keyboard)
+    - menghitung volume kubus
+    - mencetak nilai volume
+
+Jika kita masukkan pilihan: 2, maka program:
+    - menerima input panjang, lebar, dan tinggi (keyboard)
+
+
+
+p s e u d o c o d e
+#punya latipah
+1. Start
+2. Input pilihan = int(input("Ingin menghitung apa? Kubus (1), Balok (2), Bola (3) (Ketik 1/2/3):"))
+3. if (pilihan == "1"):
+4. 	sisi = int(input("Masukkan sisi:"))
+5.  volume_kubus = sisi*sisi*sisi
+6.  print ("Volume kubus:", volume_kubus)
+7. elif (pilihan == "2"):
+8.    panjang = int(input("Masukkan panjang:"))
+9.    lebar = int(input("Masukkan lebar:"))
+10.   tinggi = int(input("Masukkan tinggi:"))
+11.   volume_balok = panjang * lebar * tinggi
+12.   print ("Volume balok:", volume_balok)
+13. elif (pilihan == "3"):
+14.    r = int(input("Masukkan jari- jari:"))
+15   phi = 22/7
+16.   volume_bola = 4/3 * phi * r * r * r
+17.   print ("Volume bola:", volume_bola)
+
+#punya bu tika
+start
+input pilihan
+if pilihan == 1
+	input sisi
+	hitung volume_kubus = sisi*sisi*sisi
+	output volume_kubus
+elif pilihan == 2
+	input panjang, lebar, tinggi
+	hitung volume_balok = panjang*lebar*tinggi
+	output volume_balok
+elif pilihan == 3
+	input jari, phi = 3.14 atau 22/7
+	hitung volume_bola = 4/3*phi*jari*jari*jari
+	output volume_bola
+else
+	output 'kesalahan input'
